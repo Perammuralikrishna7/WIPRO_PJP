@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head><h1>Visitors Information</h1>
+    </head>
+    <style>
+        .myDiv1{
+            border: 0px solid black;
+            border-collapse:collapse;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .myDiv2{
+            border: 1px solid rgb(20, 214, 20);
+            border-collapse:collapse;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        tr:nth-child(even){
+            background-color: rgb(151, 155, 168);
+        }
+    </style>
+    <body>
+        <!-- ======================== -->
+        <div class="myDiv1">
+        <table>
+            <form>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="Text" id="Email" name="Email" placeholder="Email"></td>
+                </tr>
+                <tr>
+                    <td>Intrest Web:</td>
+                    <td>Reserch: <input type="checkbox"></td>
+                    <td>purchase: <input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td><label for="Occupation">Occupation:</label></td>
+                    <td>
+                    <select id="Occupation" names="Occupation" size="1">
+                        <option value="Teacher">Teacher</option>
+                        <option value="Professor">Professor</option>
+                        <option value="Lecturer">Lecturer</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>Want us to send you junk email?</td>
+                        <td>Absolutely:<input type="radio"></td>
+                        <td>No way man:<input type="radio">
+                    </td>
+                </tr>
+            </form>
+        </table>
+    </div>
+        <br><br>
+        <!-- +++++++++++++++++++++++++++++++++++++++++++ -->
+        <div class="myDiv2">
+        <table>
+            <form>
+                <tr>
+                    <td>User:</td>
+                    <td><input type="Text" id="Email" name="Email" placeholder="Email"></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="Text" id="Password" name="Password" placeholder="Password"></td>
+                    <!-- <td><input type="Button">Confirm password</td> -->
+                </tr>
+                <tr>
+                    <td>Confirm Password:</td>
+                    <td><input type="Text" id="Confirm password" name="Confirm password" placeholder="Yes/No"></td>
+                </tr>
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="Text" id="Name" name="name" placeholder="Name"></td>
+                </tr>
+                <tr>
+                    <td>Gender:</td>
+                        <td>Male:<input type="radio"></td>
+                        <td>Female:<input type="radio">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Adress:</td>
+                    <td><input type="Text" id="Adress" name="Adress"></td>
+                </tr>
+                <tr>
+                    <td><label for="Profession">Profession:</label></td>
+                    <td>
+                    <select id="Profession" names="Profession" size="1" >
+                        <option value="Teacher">Teacher</option>
+                        <option value="Professor">Professor</option>
+                        <option value="Lecturer">Lecturer</option>
+                        <option value="Software">Software</option>
+                    </select></td>
+                </tr>
+                
+            </form>
+        </table>
+    </div>
+<line>=========================================================================================================================================================================</line><br><br>
+        <input type="Submit"> Or <input type="reset">
+    </body>
+</html>

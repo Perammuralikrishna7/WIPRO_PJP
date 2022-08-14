@@ -1,0 +1,12 @@
+import sqlite3
+mytb=sqlite3.connect('mydb.db')
+print("Connection sucessfull")
+cur=mytb.cursor()
+cur.execute("INSERT INTO STUDENT VALUES(1,\"SAGAR\",\"DELHI\")")
+cur.execute("INSERT INTO STUDENT VALUES(4,\"swamy\",\"hyd\")")
+cur.execute("INSERT INTO STUDENT VALUES(2,\"suresh\",\"banglore\")")
+cur.execute("INSERT INTO STUDENT VALUES(3,\"swati\",\"chennai\")")
+cur.executemany("""INSERT INTO MARKS(EXAMID,ROLLNO,M1,M2,M3) VALUES(?,?,?,?,?)""",[(1,1,12,23,23),(2,2,23,34,34),(3,3,23,12,34),(4,4,21,31,21)])
+print("insertion sucessfull into marks")
+mytb.commit()
+cur.close()

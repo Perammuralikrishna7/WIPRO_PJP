@@ -1,0 +1,19 @@
+<?xml version='1.0'?>
+<EmployeeData>
+    <EmpNumber empno="empno:379">
+        <EmpName>ename="Max"</EmpName>
+        <Salary>salary="24000"</Salary>
+    </EmpNumber>
+    <EmpNumber empno="empno:345">
+        <EmpName>ename="Selena"</EmpName>
+        <Salary>salary="23000"</Salary>
+    </EmpNumber>
+    <EmpNumber empno="empno:212">
+        <EmpName>ename="Justin"</EmpName>
+        <Salary>salary="27000"</Salary>
+    </EmpNumber>
+    <EmpNumber empno="empno:235">
+        <EmpName>ename="Muzim"</EmpName>
+        <Salary>salary="29000"</Salary>
+    </EmpNumber> 
+</EmployeeData>

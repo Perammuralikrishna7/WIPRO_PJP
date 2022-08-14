@@ -1,0 +1,1 @@
+CREATE table Gopi(id int,name varchar);

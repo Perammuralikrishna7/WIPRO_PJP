@@ -1,0 +1,10 @@
+import MySQL
+mytb=MySQL.connect(host="localhost",user="root",password="MyNewPass",database="pythonexamples")
+print("Connection sucessfull")
+cur=mytb.cursor()
+cur.execute("CREATE TABLE STUDENT(ROOLNO INT,NAME CHAR,ADRESS CHAR)")
+print("Student table created sucessfully")
+cur.execute("CREATE TABLE MARKS(EXAMID INT,ROLLNO INT,M1 INT,M2 INT,M3 INT)")
+print("Marks table is created sucessfully")
+mytb.commit()
+cur.close()
